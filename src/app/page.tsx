@@ -84,6 +84,8 @@ export default function Home() {
           </nav>
           <a
             href="https://forms.gle/7d54LaqazPF1d6Jm6"
+            target="_blank"
+  rel="noopener noreferrer"
             className="rounded-full bg-white px-5 py-3 text-sm font-bold text-[#061b33]"
           >
             相談する
@@ -120,6 +122,8 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="https://forms.gle/7d54LaqazPF1d6Jm6"
+                target="_blank"
+  rel="noopener noreferrer"
                 className="rounded-full bg-white px-7 py-4 text-center font-bold text-[#061b33] shadow-xl shadow-black/20"
               >
                 無料ヒアリングを相談する
@@ -380,7 +384,10 @@ export default function Home() {
           </p>
 
           <div className="mt-10 inline-flex flex-col items-center gap-3 rounded-3xl bg-white px-10 py-7 text-[#061b33] sm:flex-row">
-            <a href="https://forms.gle/7d54LaqazPF1d6Jm6" className="text-3xl font-black">
+            <a href="https://forms.gle/7d54LaqazPF1d6Jm6"
+            target="_blank"
+  rel="noopener noreferrer"
+             className="text-3xl font-black">
               Googleフォームで回答する
             </a>
           </div>
