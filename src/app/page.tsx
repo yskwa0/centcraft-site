@@ -71,7 +71,7 @@ export default function Home() {
   alt="CentCraft"
   className="h-26 w-auto"
 />
-          <nav className="hidden gap-8 text-sm font-semibold text-slate-700 md:flex">
+         <nav className="hidden gap-8 text-sm font-semibold text-slate-700 xl:flex">
   <a href="#problem" className="hover:text-blue-600">
     課題
   </a>
@@ -730,7 +730,7 @@ export default function Home() {
     小さく試しながら無理なく進めます。
   </p>
 
-  <div className="mt-12 grid gap-5 md:grid-cols-5">
+  <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-5">
     {[
       {
         title: "ヒアリング",
