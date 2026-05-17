@@ -115,7 +115,7 @@ export default function Home() {
     delay: 0.15,
     ease: "easeOut",
   }}
-  className="max-w-3xl text-[34px] font-black leading-[1.18] tracking-[-0.05em] sm:text-[38px] md:text-[44px] lg:text-5xl xl:text-6xl"
+  className="max-w-3xl text-[32px] font-black leading-[1.18] tracking-[-0.05em] sm:text-[38px] md:text-[44px] lg:text-5xl xl:text-6xl"
 >
   現場の面倒な業務を、
   <span className="block">軽くする。</span>
