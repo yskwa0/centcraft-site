@@ -638,14 +638,34 @@ export default function Home() {
           </h2>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {[
-  "業務ヒアリング",
-  "返信文・テンプレート整備",
-  "資料・マニュアル作成支援",
-  "小さな業務効率化",
-].map((title, index) => (
+         {[
+  {
+    title: "業務ヒアリング",
+    text: "現在の業務の流れや、日々の中で時間がかかっている作業を伺い、改善できそうな部分を整理します。",
+  },
+  {
+    title: "返信文・テンプレート整備",
+    text: "問い合わせ返信や追客文など、毎回作成している文章を使いやすいテンプレートに整えます。",
+  },
+  {
+    title: "資料・マニュアル作成支援",
+    text: "スタッフ向けの手順書、チェックリスト、社内共有用の資料などを分かりやすく整理します。",
+  },
+  {
+    title: "便利機能のご提案",
+    text: "Googleフォーム、スプレッドシート、自動返信、管理表など、現場で使いやすい小さな機能をご提案します。",
+  },
+  {
+    title: "情報整理・見える化",
+    text: "物件情報、顧客メモ、社内ルールなど、散らばりやすい情報を確認しやすい形に整えます。",
+  },
+  {
+    title: "小さな業務効率化",
+    text: "大きなシステム導入ではなく、今ある業務に合わせて、すぐ試せる小さな改善から始めます。",
+  },
+].map((item, index) => (
   <motion.div
-    key={title}
+    key={item.title}
     initial={{
       opacity: 0,
       y: 36,
@@ -673,10 +693,11 @@ export default function Home() {
     <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-black text-blue-700">
       0{index + 1}
     </span>
-    <h3 className="mt-6 text-2xl font-black">{title}</h3>
+
+    <h3 className="mt-6 text-2xl font-black">{item.title}</h3>
+
     <p className="mt-4 leading-8 text-slate-600">
-      現場の流れを確認し、時間がかかっている作業を整理して、
-      使いやすい形に整えます。
+      {item.text}
     </p>
   </motion.div>
 ))}
