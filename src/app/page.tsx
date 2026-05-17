@@ -115,11 +115,10 @@ export default function Home() {
     delay: 0.15,
     ease: "easeOut",
   }}
-  className="text-[30px] font-black leading-tight tracking-[-0.05em] sm:text-5xl md:text-5xl xl:text-6xl"
+  className="max-w-3xl text-[34px] font-black leading-[1.15] tracking-[-0.05em] sm:text-5xl xl:text-6xl"
 >
-  現場の面倒な業務を
-  <br />
-  軽くする。
+  現場の面倒な業務を、
+  <span className="block">軽くする。</span>
 </motion.h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-9 text-white/75">
