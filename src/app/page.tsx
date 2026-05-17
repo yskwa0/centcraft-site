@@ -312,18 +312,16 @@ export default function Home() {
           <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
   <p className="font-black text-slate-900">お問い合わせ</p>
   <div className="grid gap-2">
-    <a
-      href="mailto:info@centcraftcom.net"
+    <p
       className="font-bold text-blue-600 hover:text-blue-800"
     >
       info@centcraftcom.net
-    </a>
-    <a
-      href="tel:05017268847"
+    </p>
+    <p
       className="font-bold text-blue-600 hover:text-blue-800"
     >
       050-1726-8847
-    </a>
+    </p>
   </div>
 </div>
         </div>
@@ -821,22 +819,20 @@ export default function Home() {
     <div className="mt-6 grid gap-2 text-sm leading-7 text-white/60">
   <p>
     メールでのお問い合わせ：
-    <a
-      href="mailto:info@centcraftcom.net"
+    <p
       className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
     >
       info@centcraftcom.net
-    </a>
+    </p>
   </p>
 
   <p>
     お電話でのお問い合わせ：
-    <a
-      href="tel:05017268847"
+    <p
       className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
     >
       050-1726-8847
-    </a>
+    </p>
   </p>
 </div>
   </div>
@@ -879,19 +875,17 @@ export default function Home() {
   </p>
 
   <div className="mt-3 grid gap-1">
-    <a
-      href="mailto:info@centcraftcom.net"
+    <p
       className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
     >
       info@centcraftcom.net
-    </a>
+    </p>
 
-    <a
-      href="tel:05017268847"
+    <p
       className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
     >
       050-1726-8847
-    </a>
+    </p>
   </div>
 </div>
 
