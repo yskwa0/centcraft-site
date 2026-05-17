@@ -816,16 +816,20 @@ export default function Home() {
         3分程度で回答できます。導入前提のご案内ではありません。
       </p>
     </div>
-    <div className="mt-6 grid gap-2 text-sm leading-7 text-white/60">
-    <p>メールでのお問い合わせ：</p>
-    <p className="font-bold text-white">
+   <div className="mt-6 flex flex-col items-center gap-4 text-center">
+    <p className="text-sm font-bold text-white/50">
+      メールでのお問い合わせ
+    </p>
+    <p className="mt-1 text-base font-bold tracking-wide text-white">
       info@centcraftcom.net
     </p>
   </div>
 
   <div>
-    <p>お電話でのお問い合わせ：</p>
-    <p className="font-bold text-white">
+    <p className="text-sm font-bold text-white/50">
+      お電話でのお問い合わせ
+    </p>
+    <p className="mt-1 text-base font-bold tracking-wide text-white">
       050-1726-8847
     </p>
   </div>
