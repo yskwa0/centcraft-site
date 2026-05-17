@@ -420,9 +420,9 @@ export default function Home() {
     FREE TRIAL
   </p>
 
-  <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
-    まずは1週間、無料でお試しいただけます
-  </h2>
+  <h2 className="text-[22px] font-black leading-[1.25] tracking-[-0.04em] sm:text-[26px] md:text-[34px] lg:text-4xl xl:text-5xl">
+  まずは1週間、無料でお試しいただけます
+</h2>
 
   <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
     ご希望の方には、ヒアリング内容をもとに、簡単なお試し機能や改善案をご案内します。
