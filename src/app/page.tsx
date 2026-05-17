@@ -313,12 +313,12 @@ export default function Home() {
   <p className="font-black text-slate-900">お問い合わせ</p>
   <div className="grid gap-2">
     <p
-      className="font-bold text-blue-600 hover:text-blue-800"
+      className="font-bold text-slate-900"
     >
       info@centcraftcom.net
     </p>
     <p
-      className="font-bold text-blue-600 hover:text-blue-800"
+      className="font-bold text-slate-900"
     >
       050-1726-8847
     </p>
@@ -820,7 +820,7 @@ export default function Home() {
   <p>
     メールでのお問い合わせ：
     <p
-      className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
+      className="font-bold text-slate-900"
     >
       info@centcraftcom.net
     </p>
@@ -829,7 +829,7 @@ export default function Home() {
   <p>
     お電話でのお問い合わせ：
     <p
-      className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
+      className="font-bold text-slate-900"
     >
       050-1726-8847
     </p>
@@ -876,13 +876,13 @@ export default function Home() {
 
   <div className="mt-3 grid gap-1">
     <p
-      className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
+      className="font-bold text-slate-900"
     >
       info@centcraftcom.net
     </p>
 
     <p
-      className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
+      className="font-bold text-slate-900"
     >
       050-1726-8847
     </p>
