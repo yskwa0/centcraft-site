@@ -20,6 +20,8 @@ export const metadata = {
       { url: "/favicon.ico" },
       { url: "/icon.png", type: "image/png" },
     ],
+    shortcut: "/favicon.ico?v=4",
+    apple: "/icon.png?v=4",
   },
 };
 
