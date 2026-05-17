@@ -72,19 +72,25 @@ export default function Home() {
   className="h-26 w-auto"
 />
           <nav className="hidden gap-8 text-sm font-semibold text-slate-700 md:flex">
-            <a href="#problem" className="hover:text-white">
-              課題
-            </a>
-            <a href="#service" className="hover:text-white">
-              できること
-            </a>
-            <a href="#flow" className="hover:text-white">
-              流れ
-            </a>
-            <a href="#about" className="hover:text-blue-600">
+  <a href="#problem" className="hover:text-blue-600">
+    課題
+  </a>
+  <a href="#service" className="hover:text-blue-600">
+    できること
+  </a>
+  <a href="#flow" className="hover:text-blue-600">
+    流れ
+  </a>
+  <a href="#about" className="hover:text-blue-600">
     事業概要
   </a>
-          </nav>
+  <a href="#hearing" className="hover:text-blue-600">
+    無料ヒアリング
+  </a>
+  <a href="#faq" className="hover:text-blue-600">
+    FAQ
+  </a>
+</nav>
           <a
             href="https://forms.gle/7d54LaqazPF1d6Jm6"
             target="_blank"
@@ -243,6 +249,7 @@ export default function Home() {
 
       <section id="problem" className="mx-auto max-w-7xl px-8 py-24">
 <section id="about" className="bg-white px-8 py-24">
+  
   <div className="mx-auto max-w-7xl">
     <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
       ABOUT
@@ -286,7 +293,7 @@ export default function Home() {
 
           <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
             <p className="font-black text-slate-900">所在地</p>
-            <p>千葉県柏市周辺</p>
+            <p>東京都新宿区</p>
           </div>
 
           <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
@@ -340,6 +347,251 @@ export default function Home() {
         </p>
       </motion.div>
     </div>
+  </div>
+</section>
+<section id="hearing" className="bg-[#f6f9fc] px-8 py-24">
+  <div className="mx-auto max-w-7xl">
+    <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+      FREE HEARING
+    </p>
+
+    <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+      無料ヒアリングについて
+    </h2>
+
+    <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
+      無料ヒアリングでは、現在の業務状況や、日々の中で時間がかかっている作業を簡単に伺います。
+      いきなり導入をお願いするものではなく、まずは現場のお困りごとを整理するためのものです。
+    </p>
+
+    <div className="mt-12 grid gap-5 md:grid-cols-3">
+      {[
+        {
+          title: "フォームは3分程度",
+          text: "まずは簡単なフォームで、業務内容やお困りごとを差し支えない範囲で伺います。",
+        },
+        {
+          title: "電話なら5〜10分程度",
+          text: "必要に応じて、短いお電話で状況を確認します。オンライン面談が苦手な場合でも問題ありません。",
+        },
+        {
+          title: "導入前提ではありません",
+          text: "すぐに契約や導入をお願いするものではなく、改善できそうな部分を一緒に確認します。",
+        },
+      ].map((item, index) => (
+        <motion.div
+          key={item.title}
+          initial={{ opacity: 0, y: 34, scale: 0.96 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{
+            duration: 0.42,
+            delay: index * 0.1,
+            ease: "easeOut",
+          }}
+          className="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm"
+        >
+          <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 text-sm font-black text-white">
+            {index + 1}
+          </div>
+          <h3 className="text-xl font-black text-[#071b33]">
+            {item.title}
+          </h3>
+          <p className="mt-4 text-sm leading-7 text-slate-600">
+            {item.text}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+<section id="trial" className="mx-auto max-w-7xl px-8 py-24">
+  <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+    FREE TRIAL
+  </p>
+
+  <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+    まずは1週間、無料でお試しいただけます
+  </h2>
+
+  <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
+    ご希望の方には、ヒアリング内容をもとに、簡単なお試し機能や改善案をご案内します。
+    実際に使ってみて、継続して活用したいと感じていただいた場合のみ、その後の対応をご相談します。
+  </p>
+
+  <div className="mt-12 grid gap-5 md:grid-cols-4">
+    {[
+      {
+        title: "回答内容を確認",
+        text: "フォームやお電話で伺った内容をもとに、改善できそうな業務を整理します。",
+      },
+      {
+        title: "お試し内容を作成",
+        text: "返信テンプレートやチェックリストなど、すぐ確認できる形でご用意します。",
+      },
+      {
+        title: "1週間無料で確認",
+        text: "実際の業務に合いそうか、無理なく使えるかを確認していただきます。",
+      },
+      {
+        title: "継続希望時のみ相談",
+        text: "継続をご希望いただいた場合のみ、内容や費用についてご相談します。",
+      },
+    ].map((item, index) => (
+      <motion.div
+        key={item.title}
+        initial={{ opacity: 0, y: 34, scale: 0.96 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{
+          duration: 0.42,
+          delay: index * 0.1,
+          ease: "easeOut",
+        }}
+        whileHover={{
+          y: -6,
+          scale: 1.03,
+        }}
+        className="rounded-3xl bg-white p-7 shadow-sm transition-shadow hover:shadow-xl"
+      >
+        <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 text-sm font-black text-white">
+          {index + 1}
+        </div>
+        <h3 className="text-lg font-black text-[#071b33]">
+          {item.title}
+        </h3>
+        <p className="mt-4 text-sm leading-7 text-slate-600">
+          {item.text}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+</section>
+<section id="notice" className="bg-white px-8 py-24">
+  <div className="mx-auto max-w-7xl">
+    <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+      NOTICE
+    </p>
+
+    <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+      安心してご相談いただくために
+    </h2>
+
+    <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
+      CentCraftでは、現場の業務を軽くするための整理やテンプレート作成を支援します。
+      一方で、正確な確認が必要な内容については、必ず貴社スタッフ様のご確認を前提としています。
+    </p>
+
+    <div className="mt-12 grid gap-5 md:grid-cols-2">
+      <motion.div
+        initial={{ opacity: 0, y: 34 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.42, ease: "easeOut" }}
+        className="rounded-3xl border border-blue-100 bg-[#f8fbff] p-8 shadow-sm"
+      >
+        <h3 className="text-2xl font-black text-[#071b33]">
+          自動判断しない内容
+        </h3>
+
+        <div className="mt-6 grid gap-3">
+          {[
+            "空室状況の確定",
+            "初期費用の確定",
+            "入居審査の可否判断",
+            "契約条件や重要事項に関する判断",
+            "法的な判断や専門資格が必要な回答",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl bg-white p-4 text-sm font-bold text-slate-700 shadow-sm"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 34 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.42, delay: 0.1, ease: "easeOut" }}
+        className="rounded-3xl bg-[#061b33] p-8 text-white shadow-xl"
+      >
+        <h3 className="text-2xl font-black">
+          現場確認を前提に整えます
+        </h3>
+
+        <p className="mt-6 text-sm leading-8 text-white/80">
+          返信文やテンプレートは、あくまで業務を進めやすくするための補助として作成します。
+          空室確認・費用確認・審査判断・契約条件など、正確な確認が必要な内容は、
+          貴社スタッフ様の確認を前提とした運用をご提案します。
+        </p>
+
+        <p className="mt-6 rounded-2xl bg-white p-5 text-sm font-bold leading-7 text-[#061b33]">
+          「AIに任せきり」ではなく、現場で安心して使える形に整えることを大切にしています。
+        </p>
+      </motion.div>
+    </div>
+  </div>
+</section>
+<section id="faq" className="mx-auto max-w-7xl px-8 py-24">
+  <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+    FAQ
+  </p>
+
+  <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+    よくある質問
+  </h2>
+
+  <div className="mt-12 grid gap-5 md:grid-cols-2">
+    {[
+      {
+        q: "いきなり費用はかかりますか？",
+        a: "いいえ。まずは無料ヒアリングから行い、継続をご希望いただいた場合のみ費用についてご相談します。",
+      },
+      {
+        q: "AIやシステムに詳しくなくても大丈夫ですか？",
+        a: "はい。専門的な設定をお願いするものではなく、現在の業務に合わせて使いやすい形を一緒に整理します。",
+      },
+      {
+        q: "無理に導入をすすめられることはありますか？",
+        a: "ありません。まずは現場のお困りごとを伺い、改善できそうな部分がある場合のみご案内します。",
+      },
+      {
+        q: "どのような業務を相談できますか？",
+        a: "問い合わせ返信、追客文、社内テンプレート、チェックリスト、業務フロー整理、問い合わせ導線の改善などをご相談いただけます。",
+      },
+      {
+        q: "電話やZoomでの打ち合わせは必須ですか？",
+        a: "必須ではありません。まずはフォーム回答のみでも可能です。必要に応じて、短いお電話で確認させていただきます。",
+      },
+      {
+        q: "無料お試し後に必ず契約する必要はありますか？",
+        a: "ありません。1週間ほどお試しいただき、継続して活用したいと感じていただいた場合のみご相談します。",
+      },
+    ].map((item, index) => (
+      <motion.div
+        key={item.q}
+        initial={{ opacity: 0, y: 34, scale: 0.96 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{
+          duration: 0.42,
+          delay: index * 0.06,
+          ease: "easeOut",
+        }}
+        className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm"
+      >
+        <h3 className="text-lg font-black text-[#071b33]">
+          Q. {item.q}
+        </h3>
+        <p className="mt-4 text-sm leading-8 text-slate-600">
+          A. {item.a}
+        </p>
+      </motion.div>
+    ))}
   </div>
 </section>
 
@@ -433,70 +685,171 @@ export default function Home() {
       </section>
 
       <section id="flow" className="mx-auto max-w-7xl px-8 py-24">
-        <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
-          FLOW
-        </p>
-        <h2 className="text-4xl font-black tracking-[-0.04em] md:text-5xl">
-          導入までの流れ
-        </h2>
-        <p className="mt-4 max-w-2xl text-slate-600 leading-8">
-  現場に合わせて、無理なく進めます。
-</p>
+  <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+    FLOW
+  </p>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-5">
-        {["ヒアリング", "業務整理", "改善提案", "小さく導入", "修正・定着"].map(
-  (step, index) => (
-    <motion.div
-      key={step}
-      initial={{ opacity: 0, y: 34, scale: 0.96 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true, amount: 0.35 }}
-      transition={{
-        duration: 0.42,
-        delay: index * 0.11,
-        ease: "easeOut",
-      }}
-      whileHover={{
-        y: -6,
-        scale: 1.03,
-      }}
-      className="rounded-3xl bg-white p-6 shadow-sm transition-shadow hover:shadow-xl"
-    >
-      <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-black text-white">
-        {index + 1}
-      </div>
-      <h3 className="font-black">{step}</h3>
-    </motion.div>
-  )
-)}
+  <h2 className="text-4xl font-black tracking-[-0.04em] md:text-5xl">
+    導入までの流れ
+  </h2>
+
+  <p className="mt-4 max-w-2xl text-slate-600 leading-8">
+    いきなり大きなシステムを入れるのではなく、まずは現場の状況を伺い、
+    小さく試しながら無理なく進めます。
+  </p>
+
+  <div className="mt-12 grid gap-5 md:grid-cols-5">
+    {[
+      {
+        title: "ヒアリング",
+        text: "現在の業務内容や、日々の中で時間がかかっている作業を簡単に伺います。",
+      },
+      {
+        title: "業務整理",
+        text: "問い合わせ対応・追客・情報共有など、改善できそうな部分を整理します。",
+      },
+      {
+        title: "改善提案",
+        text: "現場に合った返信テンプレートやチェックリストなど、使いやすい形をご提案します。",
+      },
+      {
+        title: "小さく導入",
+        text: "まずは一部の業務から試し、実際に使えるかどうかを確認します。",
+      },
+      {
+        title: "修正・定着",
+        text: "使いづらい点を修正し、日々の業務の中で無理なく使える形に整えます。",
+      },
+    ].map((step, index) => (
+      <motion.div
+        key={step.title}
+        initial={{ opacity: 0, y: 34, scale: 0.96 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{
+          duration: 0.42,
+          delay: index * 0.11,
+          ease: "easeOut",
+        }}
+        whileHover={{
+          y: -6,
+          scale: 1.03,
+        }}
+        className="relative rounded-3xl bg-white p-6 shadow-sm transition-shadow hover:shadow-xl"
+      >
+        <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 text-sm font-black text-white">
+          {index + 1}
         </div>
-      </section>
+
+        <h3 className="text-lg font-black text-[#071b33]">
+          {step.title}
+        </h3>
+
+        <p className="mt-4 text-sm leading-7 text-slate-600">
+          {step.text}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       <section className="bg-[#061b33] px-8 py-24 text-white">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-black tracking-[0.25em] text-cyan-300">
-            CONTACT
-          </p>
-          <h2 className="text-[24px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
-            まずは無料ヒアリングで、
-            <br />
-            現場の業務を整理しませんか？
-          </h2>
-          <p className="mt-6 text-lg leading-9 text-white/70">
-            いきなり導入を決める必要はありません。
-            まずは現状を伺い、改善できそうな部分を一緒に整理します。
-          </p>
+  <div className="mx-auto max-w-5xl text-center">
+    <p className="mb-4 text-sm font-black tracking-[0.25em] text-cyan-300">
+      CONTACT
+    </p>
 
-          <div className="mt-10 inline-flex flex-col items-center gap-3 rounded-3xl bg-white px-10 py-7 text-[#061b33] sm:flex-row">
-            <a href="https://forms.gle/7d54LaqazPF1d6Jm6"
-            target="_blank"
-  rel="noopener noreferrer"
-             className="text-3xl font-black">
-              Googleフォームで回答する
-            </a>
-          </div>
-        </div>
-      </section>
+    <h2 className="text-[24px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+      まずは無料ヒアリングで、
+      <br />
+      現場の業務を整理しませんか？
+    </h2>
+
+    <p className="mt-6 text-lg leading-9 text-white/70">
+      いきなり導入を決める必要はありません。
+      まずは3分ほどのフォームから、日々の業務で時間がかかっている部分を伺います。
+    </p>
+
+    <div className="mt-10 inline-flex flex-col items-center gap-4 rounded-3xl bg-white px-10 py-8 text-[#061b33]">
+      <a
+        href="https://forms.gle/7d54LaqazPF1d6Jm6"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-2xl font-black sm:text-3xl"
+      >
+        Googleフォームで回答する
+      </a>
+
+      <p className="text-sm font-bold text-slate-500">
+        3分程度で回答できます。導入前提のご案内ではありません。
+      </p>
+    </div>
+  </div>
+</section>
+<section id="privacy" className="bg-white px-8 py-20">
+  <div className="mx-auto max-w-5xl">
+    <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+      PRIVACY POLICY
+    </p>
+
+    <h2 className="text-[26px] font-black leading-tight tracking-[-0.04em] sm:text-4xl">
+      プライバシーポリシー
+    </h2>
+
+    <div className="mt-8 rounded-3xl border border-slate-200 bg-[#f8fbff] p-8 text-sm leading-8 text-slate-700">
+      <p>
+        CentCraftでは、お問い合わせやヒアリングフォームを通じて取得した会社名、
+        ご担当者名、メールアドレス、電話番号、回答内容などの情報を、
+        お問い合わせ対応、ヒアリング内容の確認、改善案のご案内の目的で利用します。
+      </p>
+
+      <p className="mt-4">
+        取得した情報は、法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。
+        また、取得した情報は適切に管理し、目的外で利用しないよう努めます。
+      </p>
+
+      <p className="mt-4">
+        個人情報の確認・修正・削除をご希望の場合は、お問い合わせ先までご連絡ください。
+        内容を確認のうえ、適切に対応いたします。
+      </p>
+    </div>
+  </div>
+</section>
+<footer className="bg-[#061b33] px-8 py-10 text-white">
+  <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p className="text-xl font-black">CentCraft</p>
+      <p className="mt-2 text-sm text-white/60">
+        不動産会社・中小企業向け業務改善支援
+      </p>
+    </div>
+
+    <nav className="flex flex-wrap gap-5 text-sm font-bold text-white/70">
+      <a href="#problem" className="hover:text-white">
+        課題
+      </a>
+      <a href="#service" className="hover:text-white">
+        できること
+      </a>
+      <a href="#flow" className="hover:text-white">
+        流れ
+      </a>
+      <a href="#trial" className="hover:text-white">
+        無料お試し
+      </a>
+      <a href="#faq" className="hover:text-white">
+        FAQ
+      </a>
+      <a href="#privacy" className="hover:text-white">
+        プライバシーポリシー
+      </a>
+    </nav>
+
+    <p className="text-xs text-white/50">
+      © CentCraft
+    </p>
+  </div>
+</footer>
     </main>
   );
 }
