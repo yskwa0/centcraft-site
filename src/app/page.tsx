@@ -81,6 +81,9 @@ export default function Home() {
             <a href="#flow" className="hover:text-white">
               流れ
             </a>
+            <a href="#about" className="hover:text-blue-600">
+    事業概要
+  </a>
           </nav>
           <a
             href="https://forms.gle/7d54LaqazPF1d6Jm6"
@@ -239,6 +242,107 @@ export default function Home() {
       </section>
 
       <section id="problem" className="mx-auto max-w-7xl px-8 py-24">
+<section id="about" className="bg-white px-8 py-24">
+  <div className="mx-auto max-w-7xl">
+    <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
+      ABOUT
+    </p>
+
+    <h2 className="text-[28px] font-black leading-tight tracking-[-0.04em] sm:text-4xl md:text-5xl">
+      CentCraftについて
+    </h2>
+
+    <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600">
+      CentCraftは、不動産会社様・中小企業様向けに、問い合わせ対応、
+      追客文作成、社内テンプレート整備、業務フロー整理など、
+      日々の現場業務を少し軽くするための支援を行っています。
+    </p>
+
+    <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+      いきなり大きなシステムを導入するのではなく、まずは現場で時間がかかっている業務や、
+      スタッフごとに対応が分かれやすい作業を整理し、小さく改善することを大切にしています。
+    </p>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-[0.9fr_1.1fr]">
+      <motion.div
+        initial={{ opacity: 0, y: 34 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+        className="rounded-3xl border border-blue-100 bg-[#f8fbff] p-8 shadow-sm"
+      >
+        <h3 className="text-2xl font-black">事業概要</h3>
+
+        <div className="mt-6 space-y-4 text-sm leading-7 text-slate-700">
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">事業名</p>
+            <p>CentCraft</p>
+          </div>
+
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">運営者</p>
+            <p>吉川</p>
+          </div>
+
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">所在地</p>
+            <p>千葉県柏市周辺</p>
+          </div>
+
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">事業形態</p>
+            <p>個人事業</p>
+          </div>
+
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">事業内容</p>
+            <p>
+              不動産会社向け業務改善支援、問い合わせ対応・追客文作成支援、
+              社内テンプレート整備、AI活用支援
+            </p>
+          </div>
+
+          <div className="grid gap-1 sm:grid-cols-[120px_1fr]">
+            <p className="font-black text-slate-900">対応方法</p>
+            <p>メール・電話・オンライン対応</p>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 34 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.45, delay: 0.1, ease: "easeOut" }}
+        className="rounded-3xl bg-[#061b33] p-8 text-white shadow-xl"
+      >
+        <h3 className="text-2xl font-black">大切にしていること</h3>
+
+        <div className="mt-6 grid gap-4">
+          {[
+            "いきなり導入を迫らず、まずは業務状況を丁寧に伺うこと",
+            "現場で実際に使いやすい形に、小さく整理すること",
+            "返信文・チェックリスト・社内ルールなど、すぐ使える形に整えること",
+            "必要以上に大きなシステムではなく、今ある業務に合わせて改善すること",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl border border-white/10 bg-white/10 p-5 text-sm leading-7 text-white/85"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-6 rounded-2xl bg-white p-5 text-sm font-bold leading-7 text-[#061b33]">
+          現在は個人事業として、小規模に検証・支援を進めています。
+          まずは無料ヒアリングを通じて、現場の業務負担を軽くできる部分を一緒に整理します。
+        </p>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
         <p className="mb-4 text-sm font-black tracking-[0.25em] text-blue-600">
           PROBLEM
         </p>
