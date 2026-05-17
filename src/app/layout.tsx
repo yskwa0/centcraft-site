@@ -16,7 +16,10 @@ export const metadata = {
   title: "CentCraft",
   description: "不動産会社向けの業務改善・AI活用支援",
   icons: {
-    icon: "/icon.png?v=2",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
   },
 };
 
