@@ -817,25 +817,19 @@ export default function Home() {
       </p>
     </div>
     <div className="mt-6 grid gap-2 text-sm leading-7 text-white/60">
-  <p>
-    メールでのお問い合わせ：
-    <p
-      className="font-bold text-slate-900"
-    >
+    <p>メールでのお問い合わせ：</p>
+    <p className="font-bold text-white">
       info@centcraftcom.net
     </p>
-  </p>
+  </div>
 
-  <p>
-    お電話でのお問い合わせ：
-    <p
-      className="font-bold text-slate-900"
-    >
+  <div>
+    <p>お電話でのお問い合わせ：</p>
+    <p className="font-bold text-white">
       050-1726-8847
     </p>
-  </p>
-</div>
   </div>
+</div>
 </section>
 <section id="privacy" className="bg-white px-8 py-20">
   <div className="mx-auto max-w-5xl">
@@ -874,19 +868,15 @@ export default function Home() {
     不動産会社・中小企業向け業務改善支援
   </p>
 
-  <div className="mt-3 grid gap-1">
-    <p
-      className="font-bold text-slate-900"
-    >
-      info@centcraftcom.net
-    </p>
+ <div className="mt-3 grid gap-1 text-sm">
+  <p className="font-bold text-white/80">
+    info@centcraftcom.net
+  </p>
 
-    <p
-      className="font-bold text-slate-900"
-    >
-      050-1726-8847
-    </p>
-  </div>
+  <p className="font-bold text-white/80">
+    050-1726-8847
+  </p>
+</div>
 </div>
 
     <nav className="flex flex-wrap gap-5 text-sm font-bold text-white/70">
