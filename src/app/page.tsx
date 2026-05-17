@@ -309,10 +309,23 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-1 sm:grid-cols-[120px_1fr]">
-            <p className="font-black text-slate-900">対応方法</p>
-            <p>メール・電話・オンライン対応</p>
-          </div>
+          <div className="grid gap-1 border-b border-slate-200 pb-4 sm:grid-cols-[120px_1fr]">
+  <p className="font-black text-slate-900">お問い合わせ</p>
+  <div className="grid gap-2">
+    <a
+      href="mailto:info@centcraftcom.net"
+      className="font-bold text-blue-600 hover:text-blue-800"
+    >
+      info@centcraftcom.net
+    </a>
+    <a
+      href="tel:05017268847"
+      className="font-bold text-blue-600 hover:text-blue-800"
+    >
+      050-1726-8847
+    </a>
+  </div>
+</div>
         </div>
       </motion.div>
 
@@ -653,7 +666,7 @@ export default function Home() {
   },
   {
     title: "便利機能のご提案",
-    text: "Googleフォーム、スプレッドシート、自動返信、管理表など、現場で使いやすい小さな機能をご提案します。",
+    text: "現場で簡単に使える最新の便利機能のご提案",
   },
   {
     title: "情報整理・見える化",
@@ -805,6 +818,27 @@ export default function Home() {
         3分程度で回答できます。導入前提のご案内ではありません。
       </p>
     </div>
+    <div className="mt-6 grid gap-2 text-sm leading-7 text-white/60">
+  <p>
+    メールでのお問い合わせ：
+    <a
+      href="mailto:info@centcraftcom.net"
+      className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
+    >
+      info@centcraftcom.net
+    </a>
+  </p>
+
+  <p>
+    お電話でのお問い合わせ：
+    <a
+      href="tel:05017268847"
+      className="ml-1 font-bold text-cyan-300 hover:text-cyan-200"
+    >
+      050-1726-8847
+    </a>
+  </p>
+</div>
   </div>
 </section>
 <section id="privacy" className="bg-white px-8 py-20">
@@ -839,11 +873,27 @@ export default function Home() {
 <footer className="bg-[#061b33] px-8 py-10 text-white">
   <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
     <div>
-      <p className="text-xl font-black">CentCraft</p>
-      <p className="mt-2 text-sm text-white/60">
-        不動産会社・中小企業向け業務改善支援
-      </p>
-    </div>
+  <p className="text-xl font-black">CentCraft</p>
+  <p className="mt-2 text-sm text-white/60">
+    不動産会社・中小企業向け業務改善支援
+  </p>
+
+  <div className="mt-3 grid gap-1">
+    <a
+      href="mailto:info@centcraftcom.net"
+      className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
+    >
+      info@centcraftcom.net
+    </a>
+
+    <a
+      href="tel:05017268847"
+      className="text-sm font-bold text-cyan-300 hover:text-cyan-200"
+    >
+      050-1726-8847
+    </a>
+  </div>
+</div>
 
     <nav className="flex flex-wrap gap-5 text-sm font-bold text-white/70">
       <a href="#problem" className="hover:text-white">
