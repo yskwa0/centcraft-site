@@ -17,11 +17,14 @@ export const metadata = {
   description: "不動産会社向けの業務改善・AI活用支援",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.png", type: "image/png" },
+      {
+        url: "/centcraft-favicon.png?v=1",
+        type: "image/png",
+        sizes: "32x32",
+      },
     ],
-    shortcut: "/favicon.ico?v=4",
-    apple: "/icon.png?v=4",
+    shortcut: "/centcraft-favicon.png?v=1",
+    apple: "/centcraft-favicon.png?v=1",
   },
 };
 
